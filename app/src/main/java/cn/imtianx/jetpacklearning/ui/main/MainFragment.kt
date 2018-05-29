@@ -1,30 +1,23 @@
 package cn.imtianx.jetpacklearning.ui.main
 
-import android.arch.lifecycle.ViewModelProviders
-import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import cn.imtianx.jetpacklearning.R
+import cn.imtianx.jetpacklearning.common.base.BaseDataBindingFragment
+import cn.imtianx.jetpacklearning.common.extentions.getViewModel
+import cn.imtianx.jetpacklearning.databinding.MainFragmentBinding
 
-class MainFragment : Fragment() {
+class MainFragment : BaseDataBindingFragment<MainFragmentBinding>() {
+
+    val viewModel by lazy {
+        getViewModel(MainViewModel::class.java)
+    }
+
+    override fun getContentLayoutId(): Int {
+        return R.layout.main_fragment
+    }
 
     companion object {
         fun newInstance() = MainFragment()
     }
 
-    private lateinit var viewModel: MainViewModel
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View {
-        return inflater.inflate(R.layout.main_fragment, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
 
 }
