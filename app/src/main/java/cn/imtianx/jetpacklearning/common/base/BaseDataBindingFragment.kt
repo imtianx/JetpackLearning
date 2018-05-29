@@ -9,7 +9,7 @@ import android.view.ViewGroup
 
 /**
  * <pre>
- *     @desc:
+ *     @desc: base DataBinding fragment
  * </pre>
  * @author 奚岩
  * @date 2018/5/29 9:35 PM

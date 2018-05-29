@@ -5,7 +5,7 @@ import android.databinding.ViewDataBinding
 
 /**
  * <pre>
- *     @desc:
+ *     @desc: base DataBinding activity
  * </pre>
  * @author 奚岩
  * @date 2018/5/29 下午3:24

@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity
 
 /**
  * <pre>
- *     @desc:
+ *     @desc: base activity
  * </pre>
  * @author 奚岩
  * @date 2018/5/29 下午3:24
