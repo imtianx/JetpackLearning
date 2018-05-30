@@ -23,13 +23,13 @@ android {
         }
     }
 
-    dataBinding {
-        enabled = true
-    }
-    kapt {
-        generateStubs = true
-
-    }
+//    dataBinding {
+//        enabled = true
+//    }
+//    kapt {
+//        generateStubs = true
+//
+//    }
 }
 
 dependencies {
@@ -43,5 +43,5 @@ dependencies {
 
     implementation 'android.arch.lifecycle:extensions:1.1.1'
 
-    kapt "com.android.databinding:compiler:3.2.0-alpha15"
+//    kapt "com.android.databinding:compiler:3.2.0-alpha10"
 }
