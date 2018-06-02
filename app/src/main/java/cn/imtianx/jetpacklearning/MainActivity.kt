@@ -1,6 +1,6 @@
 package cn.imtianx.jetpacklearning
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import cn.imtianx.jetpacklearning.ui.main.MainFragment
 

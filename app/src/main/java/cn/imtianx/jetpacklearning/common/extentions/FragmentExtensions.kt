@@ -1,8 +1,8 @@
 package cn.imtianx.jetpacklearning.common.extentions
 
-import android.arch.lifecycle.ViewModel
-import android.arch.lifecycle.ViewModelProviders
-import android.support.v4.app.Fragment
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProviders
+import androidx.fragment.app.Fragment
 
 /**
  * <pre>
@@ -11,6 +11,6 @@ import android.support.v4.app.Fragment
  * @author 奚岩
  * @date 2018/5/29 9:52 PM
  */
-fun <T : ViewModel> Fragment.getViewModel(clazz: Class<T>): T {
+fun <T : ViewModel> androidx.fragment.app.Fragment.getViewModel(clazz: Class<T>): T {
     return ViewModelProviders.of(this).get(clazz)
 }
