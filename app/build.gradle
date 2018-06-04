@@ -34,13 +34,17 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$deps.versions.kotlin"
+    implementation "androidx.appcompat:appcompat:$deps.versions.appcompat"
     implementation 'androidx.constraintlayout:constraintlayout:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha3'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0-alpha1'
 
-    kapt "androidx.databinding:databinding-compiler:3.2.0-alpha16"
+    kapt "androidx.databinding:databinding-compiler:$deps.versions.databinding_compiler"
+
+
+    implementation "android.arch.navigation:navigation-fragment:$deps.versions.navigation"
+    implementation "android.arch.navigation:navigation-fragment:$deps.versions.navigation"
 }
