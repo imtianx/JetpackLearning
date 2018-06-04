@@ -7,10 +7,10 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:$deps.versions.build_tools_gradle"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$deps.versions.kotlin"
+        classpath Deps.android_plugin
+        classpath Deps.kotlin_gradle_plugin
 
-        classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:$deps.versions.navigation"
+        classpath Deps.navigation_plugin
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

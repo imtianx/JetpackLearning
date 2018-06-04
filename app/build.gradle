@@ -6,12 +6,14 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: "kotlin-kapt"
 
+apply plugin: "androidx.navigation.safeargs"
+
 android {
     compileSdkVersion 'android-P'
     defaultConfig {
         applicationId "cn.imtianx.jetpacklearning"
-        minSdkVersion 15
-        targetSdkVersion 27
+        minSdkVersion Versions.android_sdk_min
+        targetSdkVersion Versions.android_sdk_target
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -34,17 +36,19 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$deps.versions.kotlin"
-    implementation "androidx.appcompat:appcompat:$deps.versions.appcompat"
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.0'
+    
+    implementation Deps.kotlin_stdlib_jdk7
+    implementation Deps.appcompat_v7
+    implementation Deps.constraintlayout
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha3'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0-alpha1'
 
-    kapt "androidx.databinding:databinding-compiler:$deps.versions.databinding_compiler"
+    implementation Deps.lifecycle_extensions
 
+    kapt Deps.databinding_compile
 
-    implementation "android.arch.navigation:navigation-fragment:$deps.versions.navigation"
-    implementation "android.arch.navigation:navigation-fragment:$deps.versions.navigation"
+    implementation Deps.navigation_fragment
+    implementation Deps.navigation_ui
 }
