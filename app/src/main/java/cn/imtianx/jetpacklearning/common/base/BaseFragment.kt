@@ -13,7 +13,7 @@ import android.view.ViewGroup
  * @author 奚岩
  * @date 2018/5/29 9:33 PM
  */
-abstract class BaseFragment : androidx.fragment.app.Fragment() {
+abstract class BaseFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         return inflater.inflate(getContentLayoutId(), container, false)

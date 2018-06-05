@@ -11,9 +11,9 @@ import androidx.databinding.ViewDataBinding
  * @author 奚岩
  * @date 2018/5/29 下午3:24
  */
-abstract class BaseDataBindingActivity<T : ViewDataBinding> : BaseActivity() {
+abstract class BaseDataBindingActivity<VDB : ViewDataBinding> : BaseActivity() {
 
-    protected lateinit var binding: T
+    protected lateinit var binding: VDB
 
     override fun initWindows() {
         super.initWindows()

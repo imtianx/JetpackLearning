@@ -5,9 +5,9 @@ import cn.imtianx.jetpacklearning.common.base.BaseDataBindingFragment
 import cn.imtianx.jetpacklearning.common.extentions.getViewModel
 import cn.imtianx.jetpacklearning.databinding.MainFragmentBinding
 
-class MainFragment : BaseDataBindingFragment<MainFragmentBinding>() {
+class MainFragment :BaseDataBindingFragment<MainFragmentBinding>() {
 
-    val viewModel by lazy {
+    private val viewModel by lazy {
         getViewModel(MainViewModel::class.java)
     }
 
@@ -15,6 +15,10 @@ class MainFragment : BaseDataBindingFragment<MainFragmentBinding>() {
         return R.layout.main_fragment
     }
 
+    override fun initData() {
+        super.initData()
+        binding.viewModel = viewModel
+    }
     companion object {
         fun newInstance() = MainFragment()
     }

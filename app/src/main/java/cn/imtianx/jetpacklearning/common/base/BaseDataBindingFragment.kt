@@ -14,9 +14,9 @@ import androidx.databinding.ViewDataBinding
  * @author 奚岩
  * @date 2018/5/29 9:35 PM
  */
-abstract class BaseDataBindingFragment<T : ViewDataBinding> : BaseFragment() {
+abstract class BaseDataBindingFragment<VDB : ViewDataBinding> : BaseFragment() {
 
-    protected lateinit var binding: T
+    protected lateinit var binding: VDB
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val root = inflater.inflate(getContentLayoutId(), container, false)
