@@ -22,7 +22,8 @@ allprojects {
     }
 }
 
-//task clean (type: Delete) {
-//    delete rootProject . buildDir
-//}
+val clean = task("clean") {
+    delete(rootProject.buildDir)
+}
+val type: Delete by clean.extra
 
