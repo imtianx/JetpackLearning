@@ -27,3 +27,5 @@ val clean = task("clean") {
 }
 val type: Delete by clean.extra
 
+
+// test gpg
