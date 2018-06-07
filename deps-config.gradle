@@ -11,4 +11,3 @@ versions.navigation = "1.0.0-alpha01"
 deps.versions = versions
 
 ext.deps = deps
-
