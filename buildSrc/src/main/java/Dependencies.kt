@@ -22,6 +22,7 @@ object Versions {
     const val databinding_compiler = "3.2.0"
 
     const val navigation = "1.0.0-alpha06"
+    const val material = "1.0.0-rc01"
 
 }
 
@@ -29,9 +30,10 @@ object Deps {
 
     val android_plugin = "com.android.tools.build:gradle:${Versions.android_plugin}"
 
-    // android: appcompat,design...
+    // android: appcompat,design(material)...
     val appcompat_v7 = "androidx.appcompat:appcompat:${Versions.appcompat}"
     val design = "com.android.support:design:${Versions.android_sdk_support}"
+    val design_material = "com.google.android.material:material:${Versions.material}"
     val constraintlayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintlayout}"
 
 

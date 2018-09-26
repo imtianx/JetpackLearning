@@ -1,5 +1,6 @@
 import com.android.build.gradle.ProguardFiles.getDefaultProguardFile
 import org.gradle.kotlin.dsl.kotlin
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
 
 plugins {
     id("com.android.application")
@@ -58,5 +59,6 @@ dependencies {
     implementation(Deps.navigation_fragment)
     implementation(Deps.navigation_ui)
 
-    implementation(Deps.design)
+    // material is the design library for AndroidX
+    implementation(Deps.design_material)
 }

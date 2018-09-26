@@ -15,6 +15,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="15dp"
         tools:context=".ui.main.MainFragment">
         
         <Button
@@ -22,12 +23,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="navigation"
             android:onClick="@{() -> viewModel.jump2Navigation(context)}"
+            android:text="navigation"
+            android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
     
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-    
+
 </layout>
