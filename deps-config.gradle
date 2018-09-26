@@ -2,11 +2,11 @@ ext.deps = [:]
 def deps = [:]
 
 def versions = [:]
-versions.kotlin = "1.2.41"
-versions.appcompat = "1.0.0-alpha1"
-versions.build_tools_gradle = "3.2.0-alpha16"
-versions.databinding_compiler = "3.2.0-alpha16"
-versions.navigation = "1.0.0-alpha01"
+versions.kotlin = "1.2.71"
+versions.appcompat = "1.0.0"
+versions.build_tools_gradle = "3.2.0"
+versions.databinding_compiler = "3.2.0"
+versions.navigation = "1.0.0"
 
 deps.versions = versions
 

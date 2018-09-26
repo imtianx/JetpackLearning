@@ -7,23 +7,21 @@
  */
 
 object Versions {
-    const val android_plugin = "3.2.0-alpha16"
-    const val android_sdk_compile = "android-P"
+    const val android_plugin = "3.2.0"
+    const val android_sdk_compile = 28
     const val android_sdk_min = 15
-    const val android_sdk_target = 27
-    const val android_sdk_support = "28.0.0-alpha1"
+    const val android_sdk_target = 28
+    const val android_sdk_support = "28.0.0"
 
-    const val kotlin = "1.2.41"
+    const val kotlin = "1.2.71"
 
     const val constraintlayout = "1.1.0"
 
-    const val appcompat = "1.0.0-alpha1"
-    const val lifecycle = "2.0.0-alpha1"
-    const val databinding_compiler = "3.2.0-alpha16"
+    const val appcompat = "1.0.0"
+    const val lifecycle = "2.0.0"
+    const val databinding_compiler = "3.2.0"
 
-
-    const val navigation = "1.0.0-alpha01"
-
+    const val navigation = "1.0.0-alpha06"
 
 }
 

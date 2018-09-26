@@ -26,6 +26,3 @@ val clean = task("clean") {
     delete(rootProject.buildDir)
 }
 val type: Delete by clean.extra
-
-
-// test gpg

@@ -1,3 +1,4 @@
+import com.android.build.gradle.ProguardFiles.getDefaultProguardFile
 import org.gradle.kotlin.dsl.kotlin
 
 plugins {
@@ -13,7 +14,7 @@ plugins {
 
 android {
 
-    compileSdkVersion("android-P")
+    compileSdkVersion(Versions.android_sdk_compile)
 
     defaultConfig {
         applicationId = "cn.imtianx.jetpacklearning"
