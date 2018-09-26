@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+    
+    </data>
+    
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.main.MainFragment">
+        
+        <include layout="@layout/layout_toolbar"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+            
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="通过 action id 跳转 并传参"
+                android:textAllCaps="false"/>
+            
+            <Button
+                android:id="@+id/btn_nav_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="BottomNavigationView——navigation"
+                android:textAllCaps="false"/>
+        
+        </LinearLayout>
+    
+    </LinearLayout>
+</layout>

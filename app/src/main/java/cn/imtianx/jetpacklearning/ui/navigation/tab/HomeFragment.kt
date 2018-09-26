@@ -1,4 +1,4 @@
-package cn.imtianx.jetpacklearning.ui.navigation
+package cn.imtianx.jetpacklearning.ui.navigation.tab
 
 import cn.imtianx.jetpacklearning.R
 import cn.imtianx.jetpacklearning.common.base.BaseDataBindingFragment

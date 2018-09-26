@@ -1,27 +1,27 @@
 package cn.imtianx.jetpacklearning.ui.main
 
+import androidx.navigation.Navigation
 import cn.imtianx.jetpacklearning.R
 import cn.imtianx.jetpacklearning.common.base.BaseDataBindingFragment
-import cn.imtianx.jetpacklearning.common.extentions.getViewModel
-import cn.imtianx.jetpacklearning.databinding.MainFragmentBinding
+import cn.imtianx.jetpacklearning.databinding.FragmentMainBinding
+import kotlinx.android.synthetic.main.fragment_main.*
 
-class MainFragment :BaseDataBindingFragment<MainFragmentBinding>() {
+class MainFragment : BaseDataBindingFragment<FragmentMainBinding>() {
 
-    private val viewModel by lazy {
-        getViewModel(MainViewModel::class.java)
-    }
 
     override fun getContentLayoutId(): Int {
-        return R.layout.main_fragment
+        return R.layout.fragment_main
     }
 
     override fun initData() {
         super.initData()
-        binding.viewModel = viewModel
-    }
-    companion object {
-        fun newInstance() = MainFragment()
-    }
 
-
+        btn_navigation.setOnClickListener {
+            // 方式一：通过 actionId 跳转
+            Navigation.findNavController(it)
+                    .navigate(R.id.action_mainFragment_to_navigationFragment)
+        }
+        //方式二
+        // btn_next.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_navigationActivity))
+    }
 }

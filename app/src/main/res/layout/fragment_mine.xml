@@ -7,7 +7,17 @@
     
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#39e70e">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="mine"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
     
     </LinearLayout>
 </layout>
